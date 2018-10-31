@@ -118,7 +118,7 @@ export default class Register extends React.Component {
     return (
       <Grid textAlign="center" verticalAlign="middle" className="app">
         <Grid.Column style={{ maxWidth: 450 }}>
-          <Header as="h2" icon color="teal" textAlign="center">
+          <Header as="h1" icon color="teal" textAlign="center">
             <Icon name="sun outline" color="teal" />
             The Sunshine Community
           </Header>
