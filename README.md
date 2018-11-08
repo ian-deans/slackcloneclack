@@ -1,6 +1,6 @@
-#Slack Clone.
+# Slack Clone.
 
-##In development.
+## In development.
 
 
-###For Funzies.
+### For Funzies.
