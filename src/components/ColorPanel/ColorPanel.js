@@ -8,8 +8,8 @@ export default class ColorPanel extends React.Component {
         as={ Menu }
         icon="labeled"
         inverted
+        visibile="true"
         vertical
-        visibile
         width="very thin"
       >
         <Divider />

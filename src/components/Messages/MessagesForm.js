@@ -10,6 +10,7 @@ class MessagesForm extends React.Component {
     errors: [],
   };
 
+
   handleChange = event => {
     this.setState({ [event.target.name]: event.target.value });
   };
@@ -53,18 +54,20 @@ class MessagesForm extends React.Component {
   }
 
   render() {
-    const { errors } = this.state;
-    
+    const { errors, message, loading } = this.state;
+
     return (
       <Segment className="message__formm">
         <Input
           fluid
           name="message"
+          disabled={loading}
           style={{ marginBottom: "0.7em" }}
           label={<Button icon="add" />}
           labelPosition="left"
           placeholder="Write your message"
           onChange={ this.handleChange }
+          value={ message }
           className={
             errors.some( error => error.message.includes( 'message' )) ? 'error' : ''
           }

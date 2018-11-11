@@ -169,8 +169,4 @@ class Channels extends React.Component {
   }
 }
 
-const mapStateToProps = state => {
-
-}
-
 export default connect(null, { setCurrentChannel })(Channels);
